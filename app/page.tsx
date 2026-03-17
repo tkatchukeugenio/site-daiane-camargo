@@ -39,7 +39,7 @@ export default function Home() {
       <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-[#C8B4E4]/20">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
+            <img src="logo.png" alt="Logo" className="h-10 w-auto" />
             <div>
               <span className="block font-bold text-[#2D2D2D] text-lg leading-none">Daiane Camargo</span>
               <span className="text-[10px] uppercase tracking-widest text-[#A890C8]">Psicóloga Clínica</span>
