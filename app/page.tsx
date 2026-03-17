@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import logoImg from '../public/logo.png';
 
 export default function Home() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -40,7 +41,7 @@ export default function Home() {
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
             {/* TENTATIVA BLINDADA PARA O LOGO */}
-            <img src="logo.png" alt="Logo Daiane Camargo" className="h-10 w-auto" />
+            <img src={logoImg.src} alt="Logo" className="h-10 w-auto" />
             <div>
               <span className="block font-bold text-[#2D2D2D] text-lg leading-none">Daiane Camargo</span>
               <span className="text-[10px] uppercase tracking-widest text-[#A890C8]">Psicóloga Clínica</span>
