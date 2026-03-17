@@ -13,23 +13,22 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className="antialiased bg-[#FAFAFA] flex flex-col min-h-screen">
+      <body className="antialiased bg-[#FAFAFA] flex flex-col min-h-screen text-left">
         
         {/* HEADER */}
-        <header className="w-full h-20 md:h-24 py-2 px-6 md:px-12 bg-white/95 backdrop-blur-md flex justify-between items-center z-[60] fixed top-0 border-b border-[#C8B4E4]/10">
+        <header className="w-full h-20 md:h-24 py-2 px-6 md:px-12 bg-white/95 backdrop-blur-md flex justify-between items-center z-[60] fixed top-0 border-b border-[#C8B4E4]/10 text-left">
           
-          {/* Identidade Visual */}
           <div className="flex items-center gap-3 md:gap-4 h-full py-2">
             <img 
               src="/logo.png" 
               alt="Logo Daiane Camargo" 
               className="h-10 md:h-16 w-auto object-contain mix-blend-multiply"
             />
-            <div className="flex flex-col border-l border-[#C8B4E4]/30 pl-3 md:pl-4">
-              <span className="text-lg md:text-2xl font-semibold text-[#2D2D2D] leading-tight">
+            <div className="flex flex-col border-l border-[#C8B4E4]/30 pl-3 md:pl-4 text-left">
+              <span className="text-lg md:text-2xl font-semibold text-[#2D2D2D] leading-tight text-left">
                 Daiane Camargo
               </span>
-              <span className="text-[9px] md:text-xs text-[#5C5C5C] font-light uppercase tracking-widest">
+              <span className="text-[9px] md:text-xs text-[#5C5C5C] font-light uppercase tracking-widest text-left">
                 Psicóloga Clínica
               </span>
             </div>
@@ -40,9 +39,8 @@ export default function RootLayout({
             <nav className="flex gap-8 text-[#5C5C5C] font-medium text-sm lg:text-base">
               <a href="#sobre" className="hover:text-[#A890C8] transition-colors">Sobre Mim</a>
               <a href="#especialidades" className="hover:text-[#A890C8] transition-colors">Especialidades</a>
-              <a href="#artigos" className="hover:text-[#A890C8] transition-colors">Artigos</a>
             </nav>
-            <a href="#" className="px-6 py-2.5 bg-[#C8B4E4] hover:bg-[#A890C8] text-[#2D2D2D] font-bold rounded-full transition-all text-sm">
+            <a href="https://wa.me/5542991451871" target="_blank" className="px-6 py-2.5 bg-[#C8B4E4] hover:bg-[#A890C8] text-[#2D2D2D] font-bold rounded-full transition-all text-sm">
               Agendar Sessão
             </a>
           </div>
@@ -62,13 +60,12 @@ export default function RootLayout({
           </button>
         </header>
 
-        {/* MENU LATERAL MOBILE (OVERLAY) */}
+        {/* MENU LATERAL MOBILE */}
         <div className={`fixed inset-0 bg-white z-[55] lg:hidden transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <nav className="flex flex-col items-center justify-center h-full gap-8 text-2xl text-[#2D2D2D] font-medium">
             <a href="#sobre" onClick={() => setIsMenuOpen(false)} className="hover:text-[#A890C8]">Sobre Mim</a>
             <a href="#especialidades" onClick={() => setIsMenuOpen(false)} className="hover:text-[#A890C8]">Especialidades</a>
-            <a href="#artigos" onClick={() => setIsMenuOpen(false)} className="hover:text-[#A890C8]">Artigos</a>
-            <a href="#" onClick={() => setIsMenuOpen(false)} className="mt-4 px-10 py-4 bg-[#C8B4E4] text-[#2D2D2D] rounded-full text-lg font-bold">
+            <a href="https://wa.me/5542991451871" target="_blank" onClick={() => setIsMenuOpen(false)} className="mt-4 px-10 py-4 bg-[#C8B4E4] text-[#2D2D2D] rounded-full text-lg font-bold">
               Agendar Sessão
             </a>
           </nav>
@@ -79,30 +76,37 @@ export default function RootLayout({
           {children}
         </main>
 
-        {/* RODAPÉ */}
-        <footer className="bg-white border-t border-[#C8B4E4]/20 pt-16 pb-8">
-          <div className="container mx-auto px-6 text-center md:text-left">
+        {/* RODAPÉ (O único que deve existir) */}
+        <footer className="bg-white border-t border-[#C8B4E4]/20 pt-16 pb-8 text-left">
+          <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
               <div className="flex flex-col items-center md:items-start space-y-4">
                 <img src="/logo.png" alt="Logo" className="w-12 h-auto mix-blend-multiply" />
                 <span className="font-bold text-[#2D2D2D]">Daiane Camargo</span>
-                <p className="text-sm text-[#5C5C5C]">CRP 00/00000</p>
+                <p className="text-sm text-[#5C5C5C]">CRP 08/XXXXX</p>
               </div>
-              <div>
+              <div className="text-center md:text-left">
                 <h4 className="font-bold text-[#2D2D2D] mb-6">Navegação</h4>
                 <ul className="space-y-4 text-sm text-[#5C5C5C]">
-                  <li><a href="#sobre">Sobre Mim</a></li>
-                  <li><a href="#especialidades">Especialidades</a></li>
+                  <li><a href="#sobre" className="hover:text-[#A890C8]">Sobre Mim</a></li>
+                  <li><a href="#especialidades" className="hover:text-[#A890C8]">Especialidades</a></li>
                 </ul>
               </div>
-              <div>
+              <div className="text-center md:text-left">
                 <h4 className="font-bold text-[#2D2D2D] mb-6">Contato</h4>
                 <p className="text-sm text-[#5C5C5C]">contato@daianecamargo.com.br</p>
               </div>
-              <div>
+              <div className="text-center md:text-left">
                 <h4 className="font-bold text-[#2D2D2D] mb-6">Redes Sociais</h4>
                 <div className="flex justify-center md:justify-start">
-                   <a href="#" className="w-10 h-10 rounded-full bg-[#FAFAFA] border border-[#C8B4E4]/20 flex items-center justify-center">IG</a>
+                   <a 
+                    href="https://www.instagram.com/psi.daianecamargo/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full border border-[#C8B4E4]/20 flex items-center justify-center hover:bg-[#C8B4E4]/10 transition-all"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A890C8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  </a>
                 </div>
               </div>
             </div>

@@ -66,7 +66,7 @@ export default function ChatIA() {
               ))}
               {step >= 2 && (
                 <a 
-                  href="https://wa.me/SEUNUMERO" 
+                  href="https://wa.me/5542991451871" 
                   className="text-center p-4 rounded-xl bg-[#A890C8] text-[#2D2D2D] font-bold text-sm shadow-lg hover:scale-105 transition-transform"
                 >
                   Falar diretamente com a Daiane
