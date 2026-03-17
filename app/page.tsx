@@ -39,7 +39,8 @@ export default function Home() {
       <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-[#C8B4E4]/20">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="logo.png" alt="Logo" className="h-10 w-auto" />
+            {/* TENTATIVA BLINDADA PARA O LOGO */}
+            <img src="logo.png" alt="Logo Daiane Camargo" className="h-10 w-auto" />
             <div>
               <span className="block font-bold text-[#2D2D2D] text-lg leading-none">Daiane Camargo</span>
               <span className="text-[10px] uppercase tracking-widest text-[#A890C8]">Psicóloga Clínica</span>
@@ -48,7 +49,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-8">
             <a href="#sobre" className="text-sm font-medium text-[#5C5C5C] hover:text-[#A890C8] transition-colors">Sobre Mim</a>
             <a href="#especialidades" className="text-sm font-medium text-[#5C5C5C] hover:text-[#A890C8] transition-colors">Especialidades</a>
-            <a href="#" className="px-5 py-2.5 bg-[#C8B4E4] text-[#2D2D2D] rounded-full text-sm font-bold hover:shadow-lg transition-all">Agendar Sessão</a>
+            <a href="https://wa.me/5542999999999" target="_blank" className="px-5 py-2.5 bg-[#C8B4E4] text-[#2D2D2D] rounded-full text-sm font-bold hover:shadow-lg transition-all">Agendar Sessão</a>
           </nav>
         </div>
       </header>
@@ -65,14 +66,14 @@ export default function Home() {
               Dar o primeiro passo é um ato de coragem. Estou aqui para caminhar ao seu lado em uma jornada de aceitação e autodescoberta.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="https://wa.me/SEU_NUMERO" target="_blank" className="px-8 py-4 bg-[#C8B4E4] hover:bg-[#A890C8] text-[#2D2D2D] font-semibold rounded-full transition-all duration-300 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <a href="https://wa.me/5542999999999" target="_blank" className="px-8 py-4 bg-[#C8B4E4] hover:bg-[#A890C8] text-[#2D2D2D] font-semibold rounded-full transition-all duration-300 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Quero iniciar minha jornada
               </a>
             </div>
           </div>
           <div className="relative flex justify-center">
             <div className="relative z-10 w-full max-w-[420px] rounded-[60px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-              <img src="/daiane.jpg" alt="Daiane Camargo" className="w-full h-full object-cover" />
+              <img src="daiane.jpg" alt="Daiane Camargo" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -161,7 +162,7 @@ export default function Home() {
 
       {/* --- FOOTER --- */}
       <footer className="py-12 bg-[#2D2D2D] text-white/60 text-center text-sm">
-        <p>© 2024 Daiane Camargo - Todos os direitos reservados</p>
+        <p>© 2026 Daiane Camargo - Todos os direitos reservados</p>
       </footer>
 
     </main>
