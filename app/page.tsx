@@ -5,11 +5,6 @@ import React, { useState } from 'react';
 export default function Home() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
-  // A TUA LOGO BLINDADA EM FORMATO DE TEXTO (BASE64)
-  // Eu encurtei o texto visualmente aqui, mas deves colar o TEU texto gigante todo no lugar deste que diz "COLA_O_TEU_CÓDIGO_GIGANTE_AQUI"
-  // Para facilitar, se quiseres, copia todo aquele texto que começa com "data:image/png;base64,iVBORw0KGgo..." que mandaste antes e coloca dentro destas aspas!
-  const logoBase64 = "COLA_O_TEU_CÓDIGO_GIGANTE_AQUI";
-
   const faqs = [
     {
       question: "Como funciona a modalidade de atendimento?",
@@ -44,12 +39,14 @@ export default function Home() {
       <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-[#C8B4E4]/20">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* AQUI ESTÁ A MÁGICA: A logo agora puxa o texto (Base64) em vez de um ficheiro */}
+            
+            {/* 🔴 TESTE DE FOGO: Ícone leve externo para provar que o código funciona */}
             <img 
-              src={logoBase64} 
-              alt="Logo Daiane Camargo" 
+              src="https://cdn-icons-png.flaticon.com/512/2913/2913008.png" 
+              alt="Logo Teste" 
               className="h-10 w-auto" 
             />
+
             <div>
               <span className="block font-bold text-[#2D2D2D] text-lg leading-none">Daiane Camargo</span>
               <span className="text-[10px] uppercase tracking-widest text-[#A890C8]">Psicóloga Clínica</span>
@@ -82,7 +79,6 @@ export default function Home() {
           </div>
           <div className="relative flex justify-center">
             <div className="relative z-10 w-full max-w-[420px] rounded-[60px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-              {/* O link da foto da Daiane continuará como estava, pois ela já carregava bem */}
               <img 
                 src="https://tkatchukeugenio.github.io/site-daiane-camargo/daiane.jpg" 
                 alt="Daiane Camargo" 
