@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import logoImg from '../public/logo.png';
 
 export default function Home() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -40,8 +39,12 @@ export default function Home() {
       <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-[#C8B4E4]/20">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* TENTATIVA BLINDADA PARA O LOGO */}
-            <img src={logoImg.src} alt="Logo" className="h-10 w-auto" />
+            {/* CAMINHO ABSOLUTO BLINDADO - NÃO FALHA EM LUGAR NENHUM */}
+            <img 
+              src="https://tkatchukeugenio.github.io/site-daiane-camargo/logo.png" 
+              alt="Logo Daiane Camargo" 
+              className="h-10 w-auto" 
+            />
             <div>
               <span className="block font-bold text-[#2D2D2D] text-lg leading-none">Daiane Camargo</span>
               <span className="text-[10px] uppercase tracking-widest text-[#A890C8]">Psicóloga Clínica</span>
@@ -74,7 +77,12 @@ export default function Home() {
           </div>
           <div className="relative flex justify-center">
             <div className="relative z-10 w-full max-w-[420px] rounded-[60px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-              <img src="daiane.jpg" alt="Daiane Camargo" className="w-full h-full object-cover" />
+              {/* CAMINHO ABSOLUTO TAMBÉM PARA A FOTO PRINCIPAL POR SEGURANÇA */}
+              <img 
+                src="https://tkatchukeugenio.github.io/site-daiane-camargo/daiane.jpg" 
+                alt="Daiane Camargo" 
+                className="w-full h-full object-cover" 
+              />
             </div>
           </div>
         </div>
