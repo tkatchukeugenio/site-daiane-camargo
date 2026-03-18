@@ -83,7 +83,7 @@ export default function RootLayout({
               <div className="flex flex-col items-center md:items-start space-y-4">
                 <img src="/logo.png" alt="Logo" className="w-12 h-auto mix-blend-multiply" />
                 <span className="font-bold text-[#2D2D2D]">Daiane Camargo</span>
-                <p className="text-sm text-[#5C5C5C]">CRP 08/XXXXX</p>
+                <p className="text-sm text-[#5C5C5C]">CRP 08/39812</p>
               </div>
               <div className="text-center md:text-left">
                 <h4 className="font-bold text-[#2D2D2D] mb-6">Navegação</h4>
