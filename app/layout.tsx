@@ -94,7 +94,7 @@ export default function RootLayout({
               </div>
               <div className="text-center md:text-left">
                 <h4 className="font-bold text-[#2D2D2D] mb-6">Contato</h4>
-                <p className="text-sm text-[#5C5C5C]">contato@daianecamargo.com.br</p>
+                <p className="text-sm text-[#5C5C5C]">psidaianecamargo@gmail.com</p>
               </div>
               <div className="text-center md:text-left">
                 <h4 className="font-bold text-[#2D2D2D] mb-6">Redes Sociais</h4>
